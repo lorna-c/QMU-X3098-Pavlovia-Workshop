@@ -220,7 +220,7 @@ In a matrix question's settings, the <code style="color: #4d4d4d;">Columns</code
 This includes what text participants will see in the matrix's columns and rows (see picture below, box 2), and how a participant's response will be saved as in your final data file (box 1).
 
 ``` {r, fig.cap = "Naming matrix columns and rows", fig.alt = "A screenshot of the Pavlovia survey designer, showing the Settings panel for a matrix question. It highlights where to change how a response is saved (box 1) and the text participants will see (box 2).", label = "9.1", echo = F}
-knitr::include_graphics("3.1.png")
+knitr::include_graphics("3.1.PNG")
 ```
 
 In the example above, participants will see the text on the right (in box 2), and the text on the left (box 1) is how the response will be recorded for that row. 
