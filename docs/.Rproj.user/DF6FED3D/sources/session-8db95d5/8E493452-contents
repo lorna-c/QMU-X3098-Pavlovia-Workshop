@@ -62,7 +62,7 @@ You can also click on pictures to zoom in on them.
 
 ## Research brief {#sec-brief}
 
-[either paste or link to Sian's brief?]
+[link to Sian's brief on Canvas]
 
 ## Survey creation {#sec-creation}
 
@@ -182,6 +182,20 @@ These will be seen by the participant and should therefore be clear and informat
 
 You will also see you now have a Page 1 and a Page 2, which can be renamed (box 2).
 These names will also be visible to participants.
+
+::: {.callout-note icon=false}
+### Activity
+
+Make sure your survey's title matches the study title in your brief.
+
+Page 1 of your survey will contain the participant information sheet and consent form. Rename the page to reflect this.
+:::
+
+::: {.callout-tip collapse="true"}
+### Solution
+
+[Screenshot of correct survey and page 1 titles]
+:::
 
 If you click on a page (rather than on a question), you will also see buttons for page options (box 3).
 These options are similar to question options:
@@ -343,7 +357,7 @@ Below is a video demonstrating the whole process, and written instructions can b
 {{< video example1a.mp4 >}}
 
 #### Creating the information sheet and consent form {#sec-info}
-To do this, make the first Page of your survey the information and consent page.
+The first Page of your survey should be the information and consent page.
 To create an information sheet, you will need an HTML question to create a question with text that does not require an answer.
 Add a new question, select the HTML question type in the dropdown menu and name the question.
 
@@ -364,7 +378,7 @@ If you are still having issues, ask for help.
 ::: {.callout-note icon=false}
 ##### Activity
 
-Follow the instructions above to create your information sheet using an HTML question and the text to HTML converter.
+Follow the instructions above to recreate the Participant Information section of your brief, using an HTML question and the text to HTML converter.
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -392,7 +406,7 @@ Finally, make sure you make this question required so participants cannot skip i
 ::: {.callout-note icon=false}
 ##### Activity
 
-Follow the instructions above to create your consent questions using an HTML question and a Radio Button Group question.
+Follow the instructions above to recreate the brief's consent statements using an HTML question, and the consent questions using a Radio Button Group question.
 :::
 
 ::: {.callout-tip collapse="true"}
@@ -406,9 +420,9 @@ Follow the instructions above to create your consent questions using an HTML que
 Now that our information sheet and consent form are created, we need to put a skip logic in place so that participants who do not consent are sent to the end of the survey.
 To do this, we will redirect participants to a standard end-of-survey screen, which allows participants to complete the survey and saves the responses they did complete (the consent form).
 
-Please make sure that the logic is working before starting data collection (i.e. if participants do not consent to participate, they are redirected to the end of the survey). 
+Please make sure that the logic is working before starting testing (i.e. if participants do not consent to participate, they are redirected to the end of the survey). 
 
-Putting this logic in place will depend on how you have set up your consent form (for this example we will use the same set up as @sec-info).
+Putting this logic in place will depend on how you have set up your consent form (for this example we will use the same set up as in @sec-info).
 You can find a video demonstration below, after the text explanation.
 
 First, go to the <code style="color: #4d4d4d;">Logic</code> tab and click the <code style="color: DodgerBlue;">Add New Rule</code> button.
@@ -453,12 +467,37 @@ Before sending the survey out, make sure this logic works so you're certain non-
 ### Adding your questions {#sec-questions}
 
 Now that your informed consent is set up, you can return to Page 2 to add your survey questions.
-[add text/instructions on how to add different questions - wait for brief from Sian]
+
+The brief has 3 sections for survey questions:
+
+* About you
+* About procrastination
+* About learning
+
+Each section should be added to a different Page in your survey.
+Each page will then contain the questions included in the relevant section of the brief.
+
+The brief specifies the type of questions you should use - make sure you keep in mind the information in @sec-names and @sec-responses when you are setting up questions.
+
+::: {.callout-warning icon=false}
+#### Tip
+
+For multiple-choice questions requiring an option for a text answer (e.g. the last option in Q1 of the About you section), once you have created the question you can select the `Other (describe)` option by clicking the <code style="color: DodgerBlue;">+</code> button next to it.
+You can then change the text of the option to match the brief.
+:::
+
+Certain questions in the brief don't have numerical values (e.g. Q1 or Q4 of the About you section), however you should still set up the responses as explained in @sec-responses.
+You can either assign a number between 1 and n (n being the total number of choices in that question), or use the same text as the choice.
+
+For example, in Q1 of the About you section there are 5 choices - you could either set up the responses to numbers (i.e. 1 = "Female" , 2 = "Male", etc.) or use the same text (i.e. "Female" = "Female", "Male" = "Male").
+
+If this doesn't make sense ask for our help.
 
 ::: {.callout-note icon=false}
 #### Activity
 
-Following the instructions above, create the questions from the brief....
+Recreate the brief's sections in Pages 2, 3 and 4 of your survey. Ensure you are naming your questions appropriately and that you have set up the responses properly.
+
 Once you're done, preview your survey to check everything works.
 :::
 
@@ -484,9 +523,9 @@ If you are still having issues, ask for help.
 ::: {.callout-note icon=false}
 #### Activity
 
-Following the instructions above, create the debrief sheet using an HTML question.
+Following the instructions above, recreate the debrief sheet from the brief using an HTML question.
 
-You now should have your full survey. Before starting testing and data collection, make sure your questions are named properly (see @sec-names) and that your responses are recorded properly (see @sec-responses).
+You should now have your full survey. Before starting testing, make sure your questions are named properly (see @sec-names) and that your responses are recorded properly (see @sec-responses).
 
 Once you're done, preview your survey to check everything works.
 :::
