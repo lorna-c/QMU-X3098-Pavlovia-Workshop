@@ -3,8 +3,10 @@ title: "X3098 Pavlovia Surveys Workshop"
 author: "Dr Lorna Camus"
 date: 10/30/25
 date-format: "[Week 8,] Do [& 31st] MMMM YYYY"
+number-sections: true
 format: 
   html:
+    code-copy: true
     include-in-header: ## this code (up to end of <style> tag is to enable carousels and edit carousel styles)
       text: |
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -60,15 +62,11 @@ You should have set up your account this week but if you have any issues with lo
 There is a table of contents on the left to help you navigate this workbook - clicking on a section in the table will take you to the section and display subheadings within this section.
 You can also click on pictures to zoom in on them.
 
-## Research brief {#sec-brief}
-
-[link to Sian's brief on Canvas]
-
 ## Survey creation {#sec-creation}
 
 Go to [https://gitlab.pavlovia.org/users/sign_in](https://gitlab.pavlovia.org/users/sign_in) and sign into your account.
 
-Once you are signed into Pavlovia, you will land on your Dashboard, where you can see all your account's details.
+Once you are signed in, go to the [Pavlovia dashboard](https://pavlovia.org/dashboard?tab=0), where you can see all your account's details.
 For the purposes of creating a survey, we are only interested in the <code style="color: #4d4d4d;">Surveys</code> tab (see the red box in the first picture below). Click on the <code style="color: #4d4d4d;">Surveys</code> tab to start.
 
 In the <code style="color: #4d4d4d;">Surveys</code> tab, you will see options to create or import surveys.
@@ -160,7 +158,7 @@ All the way to the right is also the Survey settings column (highlighted in the 
 Above that are the survey management buttons:
 
 * Save: click this to save your survey - make sure you do so regularly.
-* Undo: Click this to undo your last action.
+* Undo: click this to undo your last action.
 * Download: click this to download your survey, which allows you to import it into Pavlovia and use it in online PsychoPy experiments.
 
 As you edit your survey and click on different components of your survey (pages, questions, etc.), the settings panel will update to display the settings for the corresponding component.
@@ -181,20 +179,24 @@ You can change your survey title and add a description (box 1).
 These will be seen by the participant and should therefore be clear and informative.
 
 You will also see you now have a Page 1 and a Page 2, which can be renamed (box 2).
-These names will also be visible to participants.
+These names and descriptions will also be visible to participants.
 
 ::: {.callout-note icon=false}
 ### Activity
 
+Click the <code style="color: DodgerBlue;">Add Question</code> button to create your first page.
+
 Make sure your survey's title matches the study title in your brief.
 
 Page 1 of your survey will contain the participant information sheet and consent form. Rename the page to reflect this.
+
+Click the <code style="color: green;">Save</code> button to save your survey. You should do this regularly to avoid losing your progress.
 :::
 
 ::: {.callout-tip collapse="true"}
 ### Solution
 
-[Screenshot of correct survey and page 1 titles]
+![](2.1c.png){fig-alt="Screenshot of the Design tab of a new Pavlovia survey. The title of the survey and of the first page have been edited."}
 :::
 
 If you click on a page (rather than on a question), you will also see buttons for page options (box 3).
@@ -276,7 +278,7 @@ The question types available are described below, however I recommend playing ar
 * Image: Displays an image, video or Youtube video (via link) - there is no question.
 * Signature: Allows respondents to draw their response.
   
-To add a new question, click on "Add question" or on any of the question icons in the toolbox.
+To add a new question, click on <code style="color: DodgerBlue;">Add Question</code> or on any of the question icons in the toolbox.
 You can also drag the question icon anywhere on the survey to place a new question where you need in the survey.
 
 Each question has the same structure and options (see picture below):
@@ -336,7 +338,7 @@ In either type of question's settings, the <code style="color: #4d4d4d;">Choices
 ### Survey preview {#sec-preview}
 You can see what your survey looks like as you are designing it by clicking on the <code style="color: #4d4d4d;">Preview</code> tab (next to the <code style="color: #4d4d4d;">Designer</code> tab, see picture below).
 
-``` {r, fig.cap = "Survey Preview tab", fig.alt = "Survey Preview tab picture: A screenshot of the Pavlovia Survey Preview. The screenshot is edited to highlight where the Preview tab is situated.", label = "3.8", echo = F}
+``` {r, fig.cap = "Survey Preview tab", fig.alt = "Survey Preview tab picture: A screenshot of the Pavlovia Survey Preview. The screenshot is edited to highlight where the Preview tab is situated.", label = "4.1", echo = F}
 knitr::include_graphics("4.1.jpeg")
 ```
 
@@ -344,7 +346,7 @@ There, you will be able to go through your survey to see how it will be presente
 You will also be able to test logics you have put in place.
 
 This is different to piloting your survey, which you can also do to ensure your survey is working the way you want it (this will not enable participants to see the survey, but rather will allow you to test it yourself).
-More details on your survey's status (including the Piloting status) can be found @sec-status.
+More details on your survey's status (including the Piloting status) can be found in @sec-status.
 
 ### Getting informed consent {#sec-consent}
 
@@ -352,68 +354,164 @@ Any surveys you are creating to collect data for a study will need the first pag
 
 Additionally, the survey should automatically end if participants choose not to consent.
 
-Below is a video demonstrating the whole process, and written instructions can be found after the video.
-
-{{< video example1a.mp4 >}}
+Below is a step-by-step guide on how to set this up.
+You can find a video walkthrough at the end of this section.
 
 #### Creating the information sheet and consent form {#sec-info}
 The first Page of your survey should be the information and consent page.
 To create an information sheet, you will need an HTML question to create a question with text that does not require an answer.
-Add a new question, select the HTML question type in the dropdown menu and name the question.
+Edit the existing question in your first page to an HTML question type in the dropdown menu and name the question.
 
 To create/edit the text of an HTML question, you need to go in that question's settings.
 In the <code style="color: #4d4d4d;">General</code> tab of these settings, you will find a box titled "HTML markup" - this is where we will copy our information sheet.
 
 However, any text copied as is in this box will lose formatting, as this question requires HTML formatting to have paragraphs or bold/italicised text for example.
-You can learn a little bit of HTML to understand how to format your text for Pavlovia [here](https://www.w3schools.com/html/default.asp), or use a [text to HTML converter](https://wordtohtml.net/) to copy in your information sheet from Word, and get the HTML equivalent.
+You can learn a little bit of HTML to understand how to format your text for Pavlovia [here](https://www.w3schools.com/html/default.asp), or use a [text to HTML converter](https://wordhtml.com/) to copy in your information sheet from Word, and get the HTML equivalent.
 For this workshop, we will use the converter.
 
-All you need to do then is copy then paste the HTML text into the "HTML markup" box as described above.
-Once you have done so, the HTML question in the survey designer will update with your text.
-Please be aware that using a converter is not fool-proof, and you may lose some content (such as hyperlinks) - once you paste the HTML text into Pavlovia, please double check that everything looks as you want it.
+To use the converter, copy the information sheet from the research brief and paste it in the text box in the Word tab of the converter.
+Edit the areas marked XXXXXX in the information sheet with your details (name, email address).
+When using the converter, you may lose some formatting such as bold text or hyperlinks (web links or email addresses).
+To remedy this, you can edit the text in the Word tab using the different editing options.
+For email addresses, highlight the email address text (for example, jsmith@qmu.ac.uk), click the Insert/edit link button (see red box in picture below), and add the link you want attached to the text in the URL box.
+For an email address, the link should be `mailto:email@qmu.ac.uk`.
 
-If your text does not look the way you want, consult the HTML tutorial linked above to see if any of the formatting needs edited.
+``` {r, fig.cap = "HTML converter - adding email links", fig.alt = "HTML converter - adding email links picture: A screenshot of the HTML converter. The screenshot is edited to highlight where to find the Insert/edit link button.", label = "4.2", echo = F}
+knitr::include_graphics("4.2.png")
+```
+
+The HTML tab of the converter will return the HTML version of the information sheet, which you can copy to add to your survey.
+
+::: {.callout-note icon=false}
+##### Activity
+
+Follow the instructions above to recreate the Participant Information section of your brief in the text to HTML converter.
+
+Make sure any formatting (bold text, email address links) is reproduced properly in the Word tab of the converter.
+
+Once you're happy, go to the HTML tab of the converter, select all of the text and copy it.
+:::
+
+Click the "Solution" button below to see the HTML version of the information sheet.
+You can click the clipboard button in the top right of the code below to copy the HTML version (to paste into Pavlovia).
+Note that the name and email address of the researcher will be different to yours.
+
+```{html}
+#| code-fold: true
+#| code-summary: "Solution"
+
+<p id="isPasted">My name&nbsp;is&nbsp;Jane Smith&nbsp;and&nbsp;
+I am an undergraduate student from the School of Arts, Social Sciences and Management at Queen Margaret University in Edinburgh.&nbsp;As part of my Bachelor of Science in Psychology, I am designing a survey. The title of my project is: Procrastination at University.&nbsp;</p>
+<p>&nbsp;</p>
+<p>You are being invited to take part in a research study. To help you decide&nbsp;whether or not&nbsp;to take part, please read the following information about why the research is being done.&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>What is the purpose of the study?&nbsp;</strong>&nbsp;</p>
+<p>This UK-based study focuses on students&rsquo; perceptions of their procrastination at university and factors that may be associated with it.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Who is eligible to take part in this study?&nbsp;</strong>&nbsp;</p>
+<p>This study will include undergraduate students aged 17 years and over, studying at a UK Higher Education Institution.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>What will happen to me if I take part?&nbsp;&nbsp;</strong></p>
+<p>You will be invited to complete an online questionnaire. This will take approximately 15-20 minutes, varying for each participant. You can spend longer on the questions if you wish.&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Do I have to take part?&nbsp;&nbsp;</strong></p>
+<p>It is up to you to decide whether to take part. If you change your mind, you can stop taking part and any data you may have contributed will be lost &ndash; simply close the internet browser. You do not have to give a reason.  &nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>What are the possible benefits and risks of taking part?&nbsp;&nbsp;</strong></p>
+<p>This research will contribute to our understanding of the student experience and inform educational policies and practices to better support and promote inclusive education in the UK.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Will my participation be kept confidential?&nbsp;&nbsp;</strong></p>
+<p>Your responses are&nbsp;anonymous..&nbsp;No personal data about you will be collected. All the information you provide will be stored anonymously. Only the researchers will have access to the data, which will be stored&nbsp;in accordance with&nbsp;the University's policy.&nbsp;All of&nbsp;your personal information (i.e. your email address) will be treated&nbsp;in accordance with&nbsp;the terms of the UK Data Protection Act 2018 and the General Data Protection Regulation (GDPR).&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Who has reviewed the study?&nbsp;</strong>&nbsp;</p>
+<p>This study will be approved by the Psychology Research Ethics Committee at Queen Margaret University. If you have any concerns about the way in which the study has been conducted, you can contact the Head of Division of Psychology, Sociology and Education, Dr Stephen Darling, <a href="mailto:Sdarling@qmu.ac.uk">Sdarling@qmu.ac.uk</a> &nbsp;</p>
+<p> &nbsp;&nbsp;</p>
+<p>Thank you for taking time to read this information.&nbsp;&nbsp;</p>
+<p>Researcher Details: Jane Smith</p>
+<p>Queen Margaret University &nbsp;</p>
+<p>Musselburgh &nbsp;</p>
+<p>UK &nbsp;</p>
+<p>Email:&nbsp;<a href="mailto:jsmith@qmu.ac.uk">jsmith@qmu.ac.uk</a></p>
+```
+
+Now that you have the HTML text copied, you can paste it into the "HTML markup" box - you will find it in the <code style="color: #4d4d4d;">General</code> tab of your HTML question's settings.
+Once you have done this, the HTML question in the survey designer will update with your text.
+Please double check that everything looks as you want it.
+
+If your text does not look the way you want, review the text in the Word tab of the converter and make sure everything looks the way you want it.
 If you are still having issues, ask for help.
 
 ::: {.callout-note icon=false}
 ##### Activity
 
-Follow the instructions above to recreate the Participant Information section of your brief, using an HTML question and the text to HTML converter.
+Follow the instructions above to add the HTML text to your Information sheet question in Pavlovia.
 :::
 
 ::: {.callout-tip collapse="true"}
 ##### Solution
 
-[Screenshot of html question/information sheet]
-[could include collapsible code of html version of info sheet that can be copied directly]
+![](4.3.png){fig-alt="Screenshot of the Designer tab of a Pavlovia survey. The first question of the first page is an HTML question containing the information sheet (converted to HTML)."}
 :::
 
 Now that the information sheet is done, you will need to create your consent form below.
 The best way to do this is to create another HTML question with all your consent statements, and a second, Radio Button Group question underneath with two options: consent and no consent.
 I will walk through how to do this below.
 
-On the same page as your information sheet, create a new question below and select HTML.
-Give your question a name, then paste in your consent statements in the HTML markup box of the question's settings.
-Below this question, create a new question and select Radio Button Group, then give it a name.
-
-You will only need 2 items for this question so click on the minus button next to item 3 to delete it.
-Now you can edit items 1 and 2 to show the consent options  "I have read the statements and consent to participate" and "I do not consent to participate" (or similar wording).
-
-Since this question is related to the statements in the question above, it does not necessarily need a title - to hide the title, navigate to the <code style="color: #4d4d4d;">Layout</code> tab of the question's settings.
-Find the <code style="color: #4d4d4d;">Title location</code> heading, and select `Hidden` in the dropdown menu below it.
-Finally, make sure you make this question required so participants cannot skip it.
+On the same page as your information sheet, create a new question below, select HTML, then give the question a name.
+As with the information sheet, you will need to convert the statements in the brief to HTML - copy the statements from the brief, paste them in the converter, then copy the text from the converter's HTML tab.
+You can now paste this in the HTML markup box of the question's settings.
 
 ::: {.callout-note icon=false}
 ##### Activity
 
-Follow the instructions above to recreate the brief's consent statements using an HTML question, and the consent questions using a Radio Button Group question.
+Follow the instructions above to recreate the brief's consent statements using an HTML question and the HTML converter.
+:::
+
+Click the "Solution" button below to see the HTML version of the consent statements.
+You can click the clipboard button in the top right of the code below to copy the HTML version (to paste into Pavlovia).
+
+```{html}
+#| code-fold: true
+#| code-summary: "Solution"
+
+<p>
+  <span data-contrast="none">Please read the statements below carefully:</span><span data-ccp-props="{}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-aria-posinset="1" data-aria-level="1"><span data-contrast="none">I confirm that I have read and understand the information sheet for the above study and have had the opportunity to ask questions.</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-aria-posinset="2" data-aria-level="1"><span data-contrast="none">I wish to take part in this study</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-aria-posinset="3" data-aria-level="1"><span data-contrast="none">I am over 17 years of age</span><span data-ccp-props="{}">&nbsp;</span></li>
+</ul>
+```
+
+Below this question, create a new question and select Radio Button Group, then give it a name.
+
+You will only need 2 items for this question so click on the minus button next to item 3 to delete it.
+Now you can edit items 1 and 2 to show the consent options  "Click here if you agree to the above statements" and "Click here if you do not agree to the above statements".
+
+Since this question is related to the statements in the question above, it does not necessarily need a title - to hide the title, navigate to the <code style="color: #4d4d4d;">Layout</code> tab of the question's settings.
+Find the <code style="color: #4d4d4d;">Title location</code> heading, and select `Hidden` in the dropdown menu below it.
+Finally, make sure you make this question required so participants cannot skip it, and save your survey.
+
+::: {.callout-note icon=false}
+##### Activity
+
+Follow the instructions above to recreate the brief's consent questions using a Radio Button Group question.
 :::
 
 ::: {.callout-tip collapse="true"}
 ##### Solution
 
-[Screenshot of consent questions]
+![](4.4.png){fig-alt="Screenshot of the Designer tab of a Pavlovia survey. The second and third questions of the first page are an HTML consent statements question and a radio button group consent question."}
 :::
+
+Below is a video walkthrough of the above instructions.
+Note some of the text will look different to your brief - the video shows you the steps, not the content.
+
+{{< video example1a.mp4 >}}
 
 #### Creating the skip logic {#sec-skip}
 
@@ -428,20 +526,26 @@ You can find a video demonstration below, after the text explanation.
 First, go to the <code style="color: #4d4d4d;">Logic</code> tab and click the <code style="color: DodgerBlue;">Add New Rule</code> button.
 Once there, we will add a condition for this logic as follows:
 
+<!--
 Click the <code style="background-color: RoyalBlue; color: white ">Select</code> button to set which question this logic is dependent on.
 Select the question with the consent options (mine is called `consent2`).
 Click the <code style="background-color: DarkOrange; color: white ">Equals</code> button as you need to change what state needs to be met for the logic to work.
-In this example, we don't want a specific answer ("I do not consent to participate.") and we don't want an empty response either, so we need to choose "Does not equal".
+In this example, we don't want a specific answer ("Click here if you do not agree to the above statements") and we don't want an empty response either, so we need to choose "Does not equal".
 
 You can now select which answer will lead to the survey ending.
-Here we want the first answer ("I have read the statements and consent to participate.").
+Here we want the first answer ("Click here if you agree to the above statements").
 We are telling Pavlovia that if a participant's answer is not the first choice (so is either the second choice or empty) then they have not consented and we want them to be directed to the end of the survey.
+-->
+
+Click the Manual Entry button, paste this text in: `{block_1/consent2} <> 'Item 1'`.
+This text tells Pavlovia that if a participant's answer to the consent question (`{block_1/consent2}`) is not (`<>`) the first choice (`'Item 1'`) (so is either the second choice or empty) then they have not consented and we want them to be directed to the end of the survey.
 
 Now we need to set up what happens when the above conditions are met.
 Click the <code style="background-color: Crimson; color: white ">Select action...</code> button and select `Complete survey`.
 This means that when participants don't consent, the survey completes rather than continuing to the rest of the questions.
 
 Once this is done, you can click <code style="background-color: DodgerBlue; color: white ">Done</code> and the logic will be set.
+<code style="color: green;">Save</code> your survey.
 
 Before we can test whether this works, we will need to create a new page in the survey.
 Return to the <code style="color: #4d4d4d;">Designer</code> tab and scroll to the bottom of your survey - you should find a Page 2 there.
@@ -457,7 +561,7 @@ Once you're done, preview your survey to check everything works.
 ::: {.callout-tip collapse="true"}
 ##### Solution
 
-[Screenshot of logic]
+![](4.5b.png){fig-alt="Screenshot of the Logic tab of a Pavlovia survey. Pictured are the logic settings to skip to the end of the survey if participants do not consent."}
 :::
 
 Before sending the survey out, make sure this logic works so you're certain non-consenting participants will not see the rest of your survey.
@@ -493,6 +597,24 @@ For example, in Q1 of the About you section there are 5 choices - you could eith
 
 If this doesn't make sense ask for our help.
 
+::: {.callout-warning icon=false}
+#### Tip
+
+For multiple-choice questions with a lot of choices (e.g. Q5 of the About you section), you can copy all the choices from the brief, then go in the text box of the first choice of your question in Pavlovia, and paste the choices in - they will come up a separate choices.
+
+This also works for matrix questions - copy all the statements in the first column of the matrix, then go in the text box of the first row of the matrix question in Pavlovia, and paste the choices in.
+
+Make sure you delete any irrelevant items.
+:::
+
+Below is a video step-by-step to create a radio button group question to show you how to set up the choices and how they are recorded.
+
+{{< video radio.mp4 >}}
+
+The second video is a similar step-by-step but for matrix questions.
+
+{{< video matrix.mp4 >}}
+
 ::: {.callout-note icon=false}
 #### Activity
 
@@ -510,14 +632,14 @@ Once you're done, preview your survey to check everything works.
 ### Adding a debrief sheet {#sec-debrief}
 
 Now that your survey questions are ready, the last thing to add is your debrief sheet.
-Scroll down to the bottom of your survey - you should find a Page 3 there.
-Click the <code style="color: DodgerBlue;">Add Question</code> button in Page 3 to create a new question in a new page, then change the question type to HTML.
+Scroll down to the bottom of your survey - you should find a Page 5 there.
+Rename the page, then click the <code style="color: DodgerBlue;">Add Question</code> button to create a new question in this new page, then change the question type to HTML.
 
 Similarly to how we created our information sheet, we will copy our debrief sheet text and convert it to HTML using the [converter](https://wordtohtml.net/).
 Once you have converted the text to HTML, copy and paste it into the HTML questions <code style="color: #4d4d4d;">HTML markup</code> box.
 
 As with the information sheet, check to make sure your text has converted properly.
-If your text does not look the way you want, consult the [HTML tutorial](https://www.w3schools.com/html/default.asp) to see if any of the formatting needs edited.
+If your text does not look the way you want, review the text in the Word tab of the converter and make sure everything looks the way you want it.
 If you are still having issues, ask for help.
 
 ::: {.callout-note icon=false}
@@ -530,11 +652,25 @@ You should now have your full survey. Before starting testing, make sure your qu
 Once you're done, preview your survey to check everything works.
 :::
 
-::: {.callout-tip collapse="true"}
-#### Solution
+```{html}
+#| code-fold: true
+#| code-summary: "Solution"
 
-[Screenshot of debrief sheet/question]
-:::
+<p>
+  <span data-contrast="auto">Thank you for taking part in this study on procrastination at university The purpose of this phase of the study was to understand factors that are associated with procrastination. This, in turn, will help understand how educational policies and practices can better support and promote a more inclusive educational environment. </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto"> </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">What will happen to my answers?</span></strong><span data-contrast="auto">           </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">I will now collect all your answers and analyse them. All of your responses are anonymous. This means that nobody will be able to link your answers back to you. If you have any concerns or distress we would advise you to talk about these things with your GP. </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto"> </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Should you have any concern about any aspect of your participation in this study, please raise it with the researcher in the first instance, or with the Head of Psychology </span><span data-contrast="auto">Division</span><span data-contrast="auto">, Dr. Stephen Darling, </span><a href="mailto:Sdarling@qmu.ac.uk"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">Sdarling@qmu.ac.uk</span></span></a><span data-contrast="auto">.  </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto"> </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Researcher:</span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><strong><span data-contrast="auto">Jane Smith</span></strong></p>
+<p><span data-contrast="auto">Queen Margaret University </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Musselburgh </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">UK </span><span data-ccp-props="{}">&nbsp;</span></p>
+<p><span data-contrast="auto">Email: <a href="mailto:jsmith@qmu.ac.uk">jsmith@qmu.ac.uk</a></span></p>
+```
 
 ## Running the survey {#sec-run}
 
@@ -552,6 +688,8 @@ A Pavlovia survey has 3 statuses, which you can see in the Status area of the Ov
 * Piloting - this is the status you should use to test how your survey is working. You will not be able to share the survey with participants and **data will not be collected**, but will be able to check that your survey is working as intended.
 * Running - this is the status used to activate the survey and enable data collection. Setting the survey to running will provide you with a link to share with participants (see picture above, box 3).
 
+<p style="color: red;">You should not collect data from anyone but yourself as you do not have ethical approval to collect data from anyone. </p>
+
 You can move between the different statuses freely, however be aware that moving from the Running status to either of the other two will prevent participants from continuing to run your survey.
 
 ::: {.callout-note icon=false}
@@ -563,7 +701,7 @@ Set your survey to Running and test your survey using the survey link provided b
 ::: {.callout-tip collapse="true"}
 #### Solution
 
-[Screenshot of running button and of survey running]
+![](5.2.png){fig-alt="Screenshot of the Overview tab of a Pavlovia survey. The survey's status is set to Running."}
 :::
 
 ## Survey data {#sec-data}
@@ -588,5 +726,5 @@ Run your survey multiple times to collect data, then access the survey's data to
 ::: {.callout-tip collapse="true"}
 ### Solution
 
-[Screenshot of results page]
+![](6.2.png){fig-alt="Screenshot of the Responses tab of a Pavlovia survey. It is populated with data collected while testing the survey."}
 :::
