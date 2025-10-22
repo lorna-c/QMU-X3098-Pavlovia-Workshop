@@ -13,15 +13,15 @@
         "source_window_id": "",
         "Source": "Source",
         "docOutlineVisible": "1",
-        "cursorPosition": "728,137",
-        "scrollLine": "719"
+        "cursorPosition": "129,3",
+        "scrollLine": "118"
     },
-    "folds": "398|9|434|0|\n472|9|487|0|\n654|9|672|0|\n",
-    "lastKnownWriteTime": 1761140261,
+    "folds": "392|9|428|0|\n466|9|481|0|\n648|9|666|0|\n",
+    "lastKnownWriteTime": 1761141031,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1761140261228,
+    "last_content_update": 1761141031844,
     "read_only": false,
     "read_only_alternatives": []
 }
