@@ -620,7 +620,15 @@ Once you're done, preview your survey to check everything works.
 ::: {.callout-tip collapse="true"}
 #### Solution
 
-[Screenshot of questions]
+A fully finished version of the survey has been shared with you. To access it:
+
+* Go to your Dashboard, then click on the Surveys tab
+* Find the Access rights column (box 1 below), click on it, and tick the "shared" box (box 2 below)
+* Click out of the box - a survey named "X3098 workshop survey - finished version" should appear
+
+Once you open the survey, you will find all the brief questions, set up as needed.
+
+![](4.6.png){fig-alt="Screenshot of the Surveys tab in the Pavlovia Surveys dashboard. It is highlighted to show how to access shared surveys."}
 :::
 
 ### Adding a debrief sheet {#sec-debrief}
