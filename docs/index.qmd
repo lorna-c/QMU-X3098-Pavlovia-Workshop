@@ -187,11 +187,11 @@ Page 1 of your survey will contain the participant information sheet and consent
 Click the <code style="color: green;">Save</code> button to save your survey. You should do this regularly to avoid losing your progress.
 :::
 
-::: {.callout-tip collapse="true"}
-### Solution
+<!-- ::: {.callout-tip collapse="true"} -->
+<!-- ### Solution -->
 
-![](2.1c.png){fig-alt="Screenshot of the Design tab of a new Pavlovia survey. The title of the survey and of the first page have been edited."}
-:::
+<!-- ![](2.1c.png){fig-alt="Screenshot of the Design tab of a new Pavlovia survey. The title of the survey and of the first page have been edited."} -->
+<!-- ::: -->
 
 If you click on a page (rather than on a question), you will also see buttons for page options (box 3).
 These options are similar to question options:
@@ -385,7 +385,7 @@ Make sure any formatting (bold text, email address links) is reproduced properly
 
 Once you're happy, go to the HTML tab of the converter, select all of the text and copy it.
 :::
-
+<!--
 Click the "Solution" button below to see the HTML version of the information sheet.
 You can click the clipboard button in the top right of the code below to copy the HTML version (to paste into Pavlovia).
 Note that the name and email address of the researcher will be different to yours.
@@ -427,7 +427,7 @@ I am an undergraduate student from the School of Arts, Social Sciences and Manag
 <p>UK &nbsp;</p>
 <p>Email:&nbsp;<a href="mailto:jsmith@qmu.ac.uk">jsmith@qmu.ac.uk</a></p>
 ```
-
+-->
 Now that you have the HTML text copied, you can paste it into the "HTML markup" box - you will find it in the <code style="color: #4d4d4d;">General</code> tab of your HTML question's settings.
 Once you have done this, the HTML question in the survey designer will update with your text.
 Please double check that everything looks as you want it.
@@ -441,11 +441,11 @@ If you are still having issues, ask for help.
 Follow the instructions above to add the HTML text to your Information sheet question in Pavlovia.
 :::
 
-::: {.callout-tip collapse="true"}
-##### Solution
+<!-- ::: {.callout-tip collapse="true"} -->
+<!-- ##### Solution -->
 
-![](4.3.png){fig-alt="Screenshot of the Designer tab of a Pavlovia survey. The first question of the first page is an HTML question containing the information sheet (converted to HTML)."}
-:::
+<!-- ![](4.3.png){fig-alt="Screenshot of the Designer tab of a Pavlovia survey. The first question of the first page is an HTML question containing the information sheet (converted to HTML)."} -->
+<!-- ::: -->
 
 Now that the information sheet is done, you will need to create your consent form below.
 The best way to do this is to create another HTML question with all your consent statements, and a second, Radio Button Group question underneath with two options: consent and no consent.
@@ -460,7 +460,7 @@ You can now paste this in the HTML markup box of the question's settings.
 
 Follow the instructions above to recreate the brief's consent statements using an HTML question and the HTML converter.
 :::
-
+<!--
 Click the "Solution" button below to see the HTML version of the consent statements.
 You can click the clipboard button in the top right of the code below to copy the HTML version (to paste into Pavlovia).
 
@@ -480,7 +480,7 @@ You can click the clipboard button in the top right of the code below to copy th
 <li data-leveltext="" data-font="Symbol" data-listid="1" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" data-aria-posinset="3" data-aria-level="1"><span data-contrast="none">I am over 17 years of age</span><span data-ccp-props="{}">&nbsp;</span></li>
 </ul>
 ```
-
+-->
 Below this question, create a new question and select Radio Button Group, then give it a name.
 
 You will only need 2 items for this question so click on the minus button next to item 3 to delete it.
@@ -496,11 +496,11 @@ Finally, make sure you make this question required so participants cannot skip i
 Follow the instructions above to recreate the brief's consent questions using a Radio Button Group question.
 :::
 
-::: {.callout-tip collapse="true"}
-##### Solution
+<!-- ::: {.callout-tip collapse="true"} -->
+<!-- ##### Solution -->
 
-![](4.4.png){fig-alt="Screenshot of the Designer tab of a Pavlovia survey. The second and third questions of the first page are an HTML consent statements question and a radio button group consent question."}
-:::
+<!-- ![](4.4.png){fig-alt="Screenshot of the Designer tab of a Pavlovia survey. The second and third questions of the first page are an HTML consent statements question and a radio button group consent question."} -->
+<!-- ::: -->
 
 Below is a video walkthrough of the above instructions.
 Note some of the text will look different to your brief - the video shows you the steps, not the content.
@@ -552,11 +552,11 @@ Follow the instructions above to create the skip logic for participants who do n
 Once you're done, preview your survey to check everything works.
 :::
 
-::: {.callout-tip collapse="true"}
-##### Solution
+<!-- ::: {.callout-tip collapse="true"} -->
+<!-- ##### Solution -->
 
-![](4.5b.png){fig-alt="Screenshot of the Logic tab of a Pavlovia survey. Pictured are the logic settings to skip to the end of the survey if participants do not consent."}
-:::
+<!-- ![](4.5b.png){fig-alt="Screenshot of the Logic tab of a Pavlovia survey. Pictured are the logic settings to skip to the end of the survey if participants do not consent."} -->
+<!-- ::: -->
 
 Before sending the survey out, make sure this logic works so you're certain non-consenting participants will not see the rest of your survey.
 
@@ -616,7 +616,7 @@ Recreate the brief's sections in Pages 2, 3 and 4 of your survey. Ensure you are
 
 Once you're done, preview your survey to check everything works.
 :::
-
+<!--
 ::: {.callout-tip collapse="true"}
 #### Solution
 
@@ -630,7 +630,7 @@ Once you open the survey, you will find all the brief questions, set up as neede
 
 ![](4.6.png){fig-alt="Screenshot of the Surveys tab in the Pavlovia Surveys dashboard. It is highlighted to show how to access shared surveys."}
 :::
-
+-->
 ### Adding a debrief sheet {#sec-debrief}
 
 Now that your survey questions are ready, the last thing to add is your debrief sheet.
@@ -653,6 +653,10 @@ You should now have your full survey. Before starting testing, make sure your qu
 
 Once you're done, preview your survey to check everything works.
 :::
+<!--
+Click the "Solution" button below to see the HTML version of the debrief sheet.
+You can click the clipboard button in the top right of the code below to copy the HTML version (to paste into Pavlovia).
+Note that the name and email address of the researcher will be different to yours.
 
 ```{html}
 #| code-fold: true
@@ -673,7 +677,7 @@ Once you're done, preview your survey to check everything works.
 <p><span data-contrast="auto">UK </span><span data-ccp-props="{}">&nbsp;</span></p>
 <p><span data-contrast="auto">Email: <a href="mailto:jsmith@qmu.ac.uk">jsmith@qmu.ac.uk</a></span></p>
 ```
-
+-->
 ## Running the survey {#sec-run}
 
 ### Survey status {#sec-status}
@@ -700,11 +704,11 @@ You can move between the different statuses freely, however be aware that moving
 Set your survey to Running and test your survey using the survey link provided by Pavlovia
 :::
 
-::: {.callout-tip collapse="true"}
-#### Solution
+<!-- ::: {.callout-tip collapse="true"} -->
+<!-- #### Solution -->
 
-![](5.2.png){fig-alt="Screenshot of the Overview tab of a Pavlovia survey. The survey's status is set to Running."}
-:::
+<!-- ![](5.2.png){fig-alt="Screenshot of the Overview tab of a Pavlovia survey. The survey's status is set to Running."} -->
+<!-- ::: -->
 
 ## Survey data {#sec-data}
 
@@ -725,8 +729,8 @@ knitr::include_graphics("6.1.jpeg")
 Run your survey multiple times to collect data, then access the survey's data to see your results.
 :::
 
-::: {.callout-tip collapse="true"}
-### Solution
+<!-- ::: {.callout-tip collapse="true"} -->
+<!-- ### Solution -->
 
-![](6.2.png){fig-alt="Screenshot of the Responses tab of a Pavlovia survey. It is populated with data collected while testing the survey."}
-:::
+<!-- ![](6.2.png){fig-alt="Screenshot of the Responses tab of a Pavlovia survey. It is populated with data collected while testing the survey."} -->
+<!-- ::: -->
