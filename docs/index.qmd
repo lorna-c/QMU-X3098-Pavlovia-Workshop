@@ -141,7 +141,7 @@ The <code style="color: #4d4d4d;">Designer</code> tab provides you with an inter
 The main window (displaying the message "The survey is empty. Drag an element from the toolbox or click the button below." in the picture above) is where survey questions are displayed and edited.
 On the left is the "toolbox" column, with different question options that you can drag into the main window.
 
-The <code style="color: #4d4d4d;">Preview</code> tab is where you can preview your survey as you design it (see @sec-preview for more details).
+The <code style="color: #4d4d4d;">Preview</code> tab is where you can preview your survey as you design it.
 
 The <code style="color: #4d4d4d;">Logic</code> tab can be used to set up and see survey logics, which is covered in @sec-consent.
 
@@ -327,8 +327,32 @@ If your matrix question is a questionnaire, with a Likert-type scale in the colu
 The same can be done for the choices of Radio Button Group, Checkboxes, Dropdown, Ranking and Multiple Textboxes questions.
 In either type of question's settings, the <code style="color: #4d4d4d;">Choices</code> tab will have the same structure, with the text on the left being how a response is recorded, and the text on the right being what participants are shown.
 
-## Making your survey {#sec-content}
+## Survey status {#sec-status}
 
+To access your survey's status, click the <code style="color: #4d4d4d;">Overview</code> tab at the top of the page, to the left of the <code style="color: #4d4d4d;">Design</code> tab (when opening a survey you will be automatically directed to the <code style="color: #4d4d4d;">Design</code> tab - see picture below, box 1).
+
+``` {r, fig.cap = "Survey status", fig.alt = "Survey status picture: A screenshot of the survey designer window, highlighting which button to click to access the survey status options.", label = "5.2", echo = F}
+knitr::include_graphics("5.1.png")
+```
+
+A Pavlovia survey has 3 statuses, which you can see in the Status area of the Overview page (picture above, box 2):
+
+* <code style="color: #4d4d4d;">Inactive</code> - this is the status the survey is on upon creation and by default. Set the survey to this status when you are designing it.
+* <code style="color: #D2691E;">Piloting</code> - this is the status you should use to test how your survey is working. You will not be able to share the survey with participants and **data will not be collected**, but will be able to check that your survey is working as intended.
+* <code style="color: green;">Running</code> - this is the status used to activate the survey and enable data collection. Setting the survey to running will provide you with a link to share with participants (see picture above, box 3).
+
+<p style="color: red;">You should not collect data from anyone but yourself as you do not have ethical approval to collect data from anyone. </p>
+
+You can move between the different statuses freely, however be aware that moving from the Running status to either of the other two will prevent participants from continuing to run your survey.
+
+::: {.callout-note icon=false}
+##### Activity
+
+Go to the <code style="color: #4d4d4d;">Overview</code> tab in your survey and set the status to <code style="color: #D2691E;">PILOTING</code>.
+:::
+
+## Making your survey {#sec-content}
+<!--
 ### Survey preview {#sec-preview}
 You can see what your survey looks like as you are designing it by clicking on the <code style="color: #4d4d4d;">Preview</code> tab (next to the <code style="color: #4d4d4d;">Designer</code> tab, see picture below).
 
@@ -340,6 +364,17 @@ There, you will be able to go through your survey to see how it will be presente
 You will also be able to test logics you have put in place.
 
 This is different to piloting your survey, which you can also do to ensure your survey is working the way you want it (this will not enable participants to see the survey, but rather will allow you to test it yourself).
+More details on your survey's status (including the Piloting status) can be found in @sec-status.
+-->
+
+### Survey testing {#sec-pilot}
+You can see what your survey looks like as you are designing it by clicking on the <code style="color: #D2691E;">Pilot</code> button (in the top right corner of the page, see picture below).
+
+``` {r, fig.cap = "Survey Piloting", fig.alt = "Survey Piloting picture: A screenshot of the Pavlovia Survey window. The screenshot is edited to highlight where the Pilot button is found", label = "4.1b", echo = F}
+knitr::include_graphics("4.1b.png")
+```
+
+You can pilot your survey to see exactly what your participants will see, to make sure it looks and behaves the way you want it to (this will not enable participants to see the survey, but rather will allow you to test it yourself).
 More details on your survey's status (including the Piloting status) can be found in @sec-status.
 
 ### Getting informed consent {#sec-consent}
@@ -549,7 +584,7 @@ Click the <code style="color: DodgerBlue;">Add Question</code> button in Page 2 
 ##### Activity
 
 Follow the instructions above to create the skip logic for participants who do not consent to participate.
-Once you're done, preview your survey to check everything works.
+Once you're done, <code style="color: #D2691E;">Pilot</code> your survey to check everything works.
 :::
 
 <!-- ::: {.callout-tip collapse="true"} -->
@@ -614,7 +649,7 @@ The second video is a similar step-by-step but for matrix questions.
 
 Recreate the brief's sections in Pages 2, 3 and 4 of your survey. Ensure you are naming your questions appropriately and that you have set up the responses properly.
 
-Once you're done, preview your survey to check everything works.
+Once you're done, <code style="color: #D2691E;">Pilot</code> your survey to check everything works.
 :::
 <!--
 ::: {.callout-tip collapse="true"}
@@ -638,7 +673,7 @@ Scroll down to the bottom of your survey - you should find a Page 5 there.
 Rename the page, then click the <code style="color: DodgerBlue;">Add Question</code> button to create a new question in this new page, then change the question type to HTML.
 
 Similarly to how we created our information sheet, we will copy our debrief sheet text and convert it to HTML using the [converter](https://wordtohtml.net/).
-Once you have converted the text to HTML, copy and paste it into the HTML questions <code style="color: #4d4d4d;">HTML markup</code> box.
+Once you have converted the text to HTML, copy and paste it into the HTML question's "HTML markup" box.
 
 As with the information sheet, check to make sure your text has converted properly.
 If your text does not look the way you want, review the text in the Word tab of the converter and make sure everything looks the way you want it.
@@ -651,7 +686,7 @@ Following the instructions above, recreate the debrief sheet from the brief usin
 
 You should now have your full survey. Before starting testing, make sure your questions are named properly (see @sec-names) and that your responses are recorded properly (see @sec-responses).
 
-Once you're done, preview your survey to check everything works.
+Once you're done, <code style="color: #D2691E;">Pilot</code> your survey to check everything works.
 :::
 <!--
 Click the "Solution" button below to see the HTML version of the debrief sheet.
@@ -680,28 +715,16 @@ Note that the name and email address of the researcher will be different to your
 -->
 ## Running the survey {#sec-run}
 
-### Survey status {#sec-status}
-
-To access your survey's status, click the <code style="color: #4d4d4d;">Overview</code> tab at the top of the page, to the left of the <code style="color: #4d4d4d;">Design</code> tab (when opening a survey you will be automatically directed to the <code style="color: #4d4d4d;">Design</code> tab - see picture below, box 1).
-
-``` {r, fig.cap = "Survey status", fig.alt = "Survey status picture: A screenshot of the survey designer window, highlighting which button to click to access the survey status options.", label = "5.2", echo = F}
-knitr::include_graphics("5.1.png")
-```
-
-A Pavlovia survey has 3 statuses, which you can see in the Status area of the Overview page (picture above, box 2):
-
-* Inactive - this is the status the survey is on upon creation and by default. Set the survey to this status when you are designing it.
-* Piloting - this is the status you should use to test how your survey is working. You will not be able to share the survey with participants and **data will not be collected**, but will be able to check that your survey is working as intended.
-* Running - this is the status used to activate the survey and enable data collection. Setting the survey to running will provide you with a link to share with participants (see picture above, box 3).
+Now your survey is ready, it's time to try it out on yourself to collect some test data.
 
 <p style="color: red;">You should not collect data from anyone but yourself as you do not have ethical approval to collect data from anyone. </p>
 
-You can move between the different statuses freely, however be aware that moving from the Running status to either of the other two will prevent participants from continuing to run your survey.
+Refer to @sec-status to change your survey's status.
 
 ::: {.callout-note icon=false}
 #### Activity
 
-Set your survey to Running and test your survey using the survey link provided by Pavlovia
+Set your survey to <code style="color: green;">RUNNING</code> and test your survey on yourself by clicking the <code style="color: green;">Run</code> button.
 :::
 
 <!-- ::: {.callout-tip collapse="true"} -->
@@ -710,7 +733,7 @@ Set your survey to Running and test your survey using the survey link provided b
 <!-- ![](5.2.png){fig-alt="Screenshot of the Overview tab of a Pavlovia survey. The survey's status is set to Running."} -->
 <!-- ::: -->
 
-## Survey data {#sec-data}
+### Survey data {#sec-data}
 
 You can see your collected data by accessing the <code style="color: #4d4d4d;">Responses</code> tab, which you can find to the right of the <code style="color: #4d4d4d;">Design</code> tab (see picture below, box 1).
 
@@ -724,9 +747,9 @@ knitr::include_graphics("6.1.jpeg")
 ```
 
 ::: {.callout-note icon=false}
-### Activity
+#### Activity
 
-Run your survey multiple times to collect data, then access the survey's data to see your results.
+Run your survey multiple times on yourself to collect data, then access the survey's data to see your results.
 :::
 
 <!-- ::: {.callout-tip collapse="true"} -->

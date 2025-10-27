@@ -93,18 +93,18 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-names" id="toc-sec-names" class="nav-link" data-scroll-target="#sec-names"><span class="header-section-number">2.3</span> Naming your questions</a></li>
   <li><a href="#sec-responses" id="toc-sec-responses" class="nav-link" data-scroll-target="#sec-responses"><span class="header-section-number">2.4</span> Change how a response is recorded</a></li>
   </ul></li>
-  <li><a href="#sec-content" id="toc-sec-content" class="nav-link" data-scroll-target="#sec-content"><span class="header-section-number">3</span> Making your survey</a>
+  <li><a href="#sec-status" id="toc-sec-status" class="nav-link" data-scroll-target="#sec-status"><span class="header-section-number">3</span> Survey status</a></li>
+  <li><a href="#sec-content" id="toc-sec-content" class="nav-link" data-scroll-target="#sec-content"><span class="header-section-number">4</span> Making your survey</a>
   <ul class="collapse">
-  <li><a href="#sec-preview" id="toc-sec-preview" class="nav-link" data-scroll-target="#sec-preview"><span class="header-section-number">3.1</span> Survey preview</a></li>
-  <li><a href="#sec-consent" id="toc-sec-consent" class="nav-link" data-scroll-target="#sec-consent"><span class="header-section-number">3.2</span> Getting informed consent</a></li>
-  <li><a href="#sec-questions" id="toc-sec-questions" class="nav-link" data-scroll-target="#sec-questions"><span class="header-section-number">3.3</span> Adding your questions</a></li>
-  <li><a href="#sec-debrief" id="toc-sec-debrief" class="nav-link" data-scroll-target="#sec-debrief"><span class="header-section-number">3.4</span> Adding a debrief sheet</a></li>
+  <li><a href="#sec-pilot" id="toc-sec-pilot" class="nav-link" data-scroll-target="#sec-pilot"><span class="header-section-number">4.1</span> Survey testing</a></li>
+  <li><a href="#sec-consent" id="toc-sec-consent" class="nav-link" data-scroll-target="#sec-consent"><span class="header-section-number">4.2</span> Getting informed consent</a></li>
+  <li><a href="#sec-questions" id="toc-sec-questions" class="nav-link" data-scroll-target="#sec-questions"><span class="header-section-number">4.3</span> Adding your questions</a></li>
+  <li><a href="#sec-debrief" id="toc-sec-debrief" class="nav-link" data-scroll-target="#sec-debrief"><span class="header-section-number">4.4</span> Adding a debrief sheet</a></li>
   </ul></li>
-  <li><a href="#sec-run" id="toc-sec-run" class="nav-link" data-scroll-target="#sec-run"><span class="header-section-number">4</span> Running the survey</a>
+  <li><a href="#sec-run" id="toc-sec-run" class="nav-link" data-scroll-target="#sec-run"><span class="header-section-number">5</span> Running the survey</a>
   <ul class="collapse">
-  <li><a href="#sec-status" id="toc-sec-status" class="nav-link" data-scroll-target="#sec-status"><span class="header-section-number">4.1</span> Survey status</a></li>
+  <li><a href="#sec-data" id="toc-sec-data" class="nav-link" data-scroll-target="#sec-data"><span class="header-section-number">5.1</span> Survey data</a></li>
   </ul></li>
-  <li><a href="#sec-data" id="toc-sec-data" class="nav-link" data-scroll-target="#sec-data"><span class="header-section-number">5</span> Survey data</a></li>
   </ul>
 </nav>
 </div>
@@ -225,8 +225,8 @@ Activity
 </div>
 </div>
 <p>The <code style="color: #4d4d4d;">Designer</code> tab provides you with an interface to allow you to click or drag options for your survey. The main window (displaying the message “The survey is empty. Drag an element from the toolbox or click the button below.” in the picture above) is where survey questions are displayed and edited. On the left is the “toolbox” column, with different question options that you can drag into the main window.</p>
-<p>The <code style="color: #4d4d4d;">Preview</code> tab is where you can preview your survey as you design it (see <a href="#sec-preview" class="quarto-xref">Section&nbsp;3.1</a> for more details).</p>
-<p>The <code style="color: #4d4d4d;">Logic</code> tab can be used to set up and see survey logics, which is covered in <a href="#sec-consent" class="quarto-xref">Section&nbsp;3.2</a>.</p>
+<p>The <code style="color: #4d4d4d;">Preview</code> tab is where you can preview your survey as you design it.</p>
+<p>The <code style="color: #4d4d4d;">Logic</code> tab can be used to set up and see survey logics, which is covered in <a href="#sec-consent" class="quarto-xref">Section&nbsp;4.2</a>.</p>
 <p>The <code style="color: #4d4d4d;">JSON Editor</code> tab is for advanced editing using the survey’s source code (not required here).</p>
 <p>All the way to the right is also the Survey settings column (highlighted in the picture), with Undo and Redo arrows to the left of it.</p>
 <p>Above that are the survey management buttons:</p>
@@ -392,31 +392,85 @@ Activity
 <p>The same can be done for the choices of Radio Button Group, Checkboxes, Dropdown, Ranking and Multiple Textboxes questions. In either type of question’s settings, the <code style="color: #4d4d4d;">Choices</code> tab will have the same structure, with the text on the left being how a response is recorded, and the text on the right being what participants are shown.</p>
 </section>
 </section>
-<section id="sec-content" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="sec-content"><span class="header-section-number">3</span> Making your survey</h2>
-<section id="sec-preview" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="sec-preview"><span class="header-section-number">3.1</span> Survey preview</h3>
-<p>You can see what your survey looks like as you are designing it by clicking on the <code style="color: #4d4d4d;">Preview</code> tab (next to the <code style="color: #4d4d4d;">Designer</code> tab, see picture below).</p>
+<section id="sec-status" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-status"><span class="header-section-number">3</span> Survey status</h2>
+<p>To access your survey’s status, click the <code style="color: #4d4d4d;">Overview</code> tab at the top of the page, to the left of the <code style="color: #4d4d4d;">Design</code> tab (when opening a survey you will be automatically directed to the <code style="color: #4d4d4d;">Design</code> tab - see picture below, box 1).</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="4.1.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Survey Preview tab"><img src="4.1.jpeg" class="img-fluid figure-img" alt="Survey Preview tab picture: A screenshot of the Pavlovia Survey Preview. The screenshot is edited to highlight where the Preview tab is situated." width="861"></a></p>
-<figcaption>Survey Preview tab</figcaption>
+<p><a href="5.1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Survey status"><img src="5.1.png" class="img-fluid figure-img" alt="Survey status picture: A screenshot of the survey designer window, highlighting which button to click to access the survey status options." width="950"></a></p>
+<figcaption>Survey status</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>There, you will be able to go through your survey to see how it will be presented to participants. You will also be able to test logics you have put in place.</p>
-<p>This is different to piloting your survey, which you can also do to ensure your survey is working the way you want it (this will not enable participants to see the survey, but rather will allow you to test it yourself). More details on your survey’s status (including the Piloting status) can be found in <a href="#sec-status" class="quarto-xref">Section&nbsp;4.1</a>.</p>
+<p>A Pavlovia survey has 3 statuses, which you can see in the Status area of the Overview page (picture above, box 2):</p>
+<ul>
+<li><code style="color: #4d4d4d;">Inactive</code> - this is the status the survey is on upon creation and by default. Set the survey to this status when you are designing it.</li>
+<li><code style="color: #D2691E;">Piloting</code> - this is the status you should use to test how your survey is working. You will not be able to share the survey with participants and <strong>data will not be collected</strong>, but will be able to check that your survey is working as intended.</li>
+<li><code style="color: green;">Running</code> - this is the status used to activate the survey and enable data collection. Setting the survey to running will provide you with a link to share with participants (see picture above, box 3).</li>
+</ul>
+<p style="color: red;">
+You should not collect data from anyone but yourself as you do not have ethical approval to collect data from anyone.
+</p>
+<p>You can move between the different statuses freely, however be aware that moving from the Running status to either of the other two will prevent participants from continuing to run your survey.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Go to the <code style="color: #4d4d4d;">Overview</code> tab in your survey and set the status to <code style="color: #D2691E;">PILOTING</code>.</p>
+</div>
+</div>
 </section>
-<section id="sec-consent" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="sec-consent"><span class="header-section-number">3.2</span> Getting informed consent</h3>
+<section id="sec-content" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="sec-content"><span class="header-section-number">4</span> Making your survey</h2>
+<!--
+### Survey preview {#sec-preview}
+You can see what your survey looks like as you are designing it by clicking on the <code style="color: #4d4d4d;">Preview</code> tab (next to the <code style="color: #4d4d4d;">Designer</code> tab, see picture below).
+
+
+::: {.cell}
+::: {.cell-output-display}
+![Survey Preview tab](4.1.jpeg){fig-alt='Survey Preview tab picture: A screenshot of the Pavlovia Survey Preview. The screenshot is edited to highlight where the Preview tab is situated.' width=861}
+:::
+:::
+
+
+There, you will be able to go through your survey to see how it will be presented to participants.
+You will also be able to test logics you have put in place.
+
+This is different to piloting your survey, which you can also do to ensure your survey is working the way you want it (this will not enable participants to see the survey, but rather will allow you to test it yourself).
+More details on your survey's status (including the Piloting status) can be found in @sec-status.
+-->
+<section id="sec-pilot" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="sec-pilot"><span class="header-section-number">4.1</span> Survey testing</h3>
+<p>You can see what your survey looks like as you are designing it by clicking on the <code style="color: #D2691E;">Pilot</code> button (in the top right corner of the page, see picture below).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="4.1b.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Survey Piloting"><img src="4.1b.png" class="img-fluid figure-img" alt="Survey Piloting picture: A screenshot of the Pavlovia Survey window. The screenshot is edited to highlight where the Pilot button is found" width="940"></a></p>
+<figcaption>Survey Piloting</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>You can pilot your survey to see exactly what your participants will see, to make sure it looks and behaves the way you want it to (this will not enable participants to see the survey, but rather will allow you to test it yourself). More details on your survey’s status (including the Piloting status) can be found in <a href="#sec-status" class="quarto-xref">Section&nbsp;3</a>.</p>
+</section>
+<section id="sec-consent" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="sec-consent"><span class="header-section-number">4.2</span> Getting informed consent</h3>
 <p>Any surveys you are creating to collect data for a study will need the first page to be an information sheet and consent form for participants to provide informed consent to participate.</p>
 <p>Additionally, the survey should automatically end if participants choose not to consent.</p>
 <p>Below is a step-by-step guide on how to set this up. You can find a video walkthrough at the end of this section.</p>
-<section id="sec-info" class="level4" data-number="3.2.1">
-<h4 data-number="3.2.1" class="anchored" data-anchor-id="sec-info"><span class="header-section-number">3.2.1</span> Creating the information sheet and consent form</h4>
+<section id="sec-info" class="level4" data-number="4.2.1">
+<h4 data-number="4.2.1" class="anchored" data-anchor-id="sec-info"><span class="header-section-number">4.2.1</span> Creating the information sheet and consent form</h4>
 <p>The first Page of your survey should be the information and consent page. To create an information sheet, you will need an HTML question to create a question with text that does not require an answer. Edit the existing question in your first page to an HTML question type in the dropdown menu and name the question.</p>
 <p>To create/edit the text of an HTML question, you need to go in that question’s settings. In the <code style="color: #4d4d4d;">General</code> tab of these settings, you will find a box titled “HTML markup” - this is where we will copy our information sheet.</p>
 <p>However, any text copied as is in this box will lose formatting, as this question requires HTML formatting to have paragraphs or bold/italicised text for example. You can learn a little bit of HTML to understand how to format your text for Pavlovia <a href="https://www.w3schools.com/html/default.asp">here</a>, or use a <a href="https://wordhtml.com/">text to HTML converter</a> to copy in your information sheet from Word, and get the HTML equivalent. For this workshop, we will use the converter.</p>
@@ -425,7 +479,7 @@ Activity
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="4.2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="HTML converter - adding email links"><img src="4.2.png" class="img-fluid figure-img" alt="HTML converter - adding email links picture: A screenshot of the HTML converter. The screenshot is edited to highlight where to find the Insert/edit link button." width="724"></a></p>
+<p><a href="4.2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="HTML converter - adding email links"><img src="4.2.png" class="img-fluid figure-img" alt="HTML converter - adding email links picture: A screenshot of the HTML converter. The screenshot is edited to highlight where to find the Insert/edit link button." width="724"></a></p>
 <figcaption>HTML converter - adding email links</figcaption>
 </figure>
 </div>
@@ -572,11 +626,11 @@ Activity
 <p>Below is a video walkthrough of the above instructions. Note some of the text will look different to your brief - the video shows you the steps, not the content.</p>
 <div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="example1a.mp4"></video></div>
 </section>
-<section id="sec-skip" class="level4" data-number="3.2.2">
-<h4 data-number="3.2.2" class="anchored" data-anchor-id="sec-skip"><span class="header-section-number">3.2.2</span> Creating the skip logic</h4>
+<section id="sec-skip" class="level4" data-number="4.2.2">
+<h4 data-number="4.2.2" class="anchored" data-anchor-id="sec-skip"><span class="header-section-number">4.2.2</span> Creating the skip logic</h4>
 <p>Now that our information sheet and consent form are created, we need to put a skip logic in place so that participants who do not consent are sent to the end of the survey. To do this, we will redirect participants to a standard end-of-survey screen, which allows participants to complete the survey and saves the responses they did complete (the consent form).</p>
 <p>Please make sure that the logic is working before starting testing (i.e.&nbsp;if participants do not consent to participate, they are redirected to the end of the survey).</p>
-<p>Putting this logic in place will depend on how you have set up your consent form (for this example we will use the same set up as in <a href="#sec-info" class="quarto-xref">Section&nbsp;3.2.1</a>). You can find a video demonstration below, after the text explanation.</p>
+<p>Putting this logic in place will depend on how you have set up your consent form (for this example we will use the same set up as in <a href="#sec-info" class="quarto-xref">Section&nbsp;4.2.1</a>). You can find a video demonstration below, after the text explanation.</p>
 <p>First, go to the <code style="color: #4d4d4d;">Logic</code> tab and click the <code style="color: DodgerBlue;">Add New Rule</code> button. Once there, we will add a condition for this logic as follows:</p>
 <!--
 Click the <code style="background-color: RoyalBlue; color: white ">Select</code> button to set which question this logic is dependent on.
@@ -602,7 +656,7 @@ Activity
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Follow the instructions above to create the skip logic for participants who do not consent to participate. Once you’re done, preview your survey to check everything works.</p>
+<p>Follow the instructions above to create the skip logic for participants who do not consent to participate. Once you’re done, <code style="color: #D2691E;">Pilot</code> your survey to check everything works.</p>
 </div>
 </div>
 <!-- ::: {.callout-tip collapse="true"} -->
@@ -613,8 +667,8 @@ Activity
 <div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="example1b.mp4"></video></div>
 </section>
 </section>
-<section id="sec-questions" class="level3" data-number="3.3">
-<h3 data-number="3.3" class="anchored" data-anchor-id="sec-questions"><span class="header-section-number">3.3</span> Adding your questions</h3>
+<section id="sec-questions" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="sec-questions"><span class="header-section-number">4.3</span> Adding your questions</h3>
 <p>Now that your informed consent is set up, you can return to Page 2 to add your survey questions.</p>
 <p>The brief has 3 sections for survey questions:</p>
 <ul>
@@ -670,7 +724,7 @@ Activity
 </div>
 <div class="callout-body-container callout-body">
 <p>Recreate the brief’s sections in Pages 2, 3 and 4 of your survey. Ensure you are naming your questions appropriately and that you have set up the responses properly.</p>
-<p>Once you’re done, preview your survey to check everything works.</p>
+<p>Once you’re done, <code style="color: #D2691E;">Pilot</code> your survey to check everything works.</p>
 </div>
 </div>
 <!--
@@ -689,10 +743,10 @@ Once you open the survey, you will find all the brief questions, set up as neede
 :::
 -->
 </section>
-<section id="sec-debrief" class="level3" data-number="3.4">
-<h3 data-number="3.4" class="anchored" data-anchor-id="sec-debrief"><span class="header-section-number">3.4</span> Adding a debrief sheet</h3>
+<section id="sec-debrief" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="sec-debrief"><span class="header-section-number">4.4</span> Adding a debrief sheet</h3>
 <p>Now that your survey questions are ready, the last thing to add is your debrief sheet. Scroll down to the bottom of your survey - you should find a Page 5 there. Rename the page, then click the <code style="color: DodgerBlue;">Add Question</code> button to create a new question in this new page, then change the question type to HTML.</p>
-<p>Similarly to how we created our information sheet, we will copy our debrief sheet text and convert it to HTML using the <a href="https://wordtohtml.net/">converter</a>. Once you have converted the text to HTML, copy and paste it into the HTML questions <code style="color: #4d4d4d;">HTML markup</code> box.</p>
+<p>Similarly to how we created our information sheet, we will copy our debrief sheet text and convert it to HTML using the <a href="https://wordtohtml.net/">converter</a>. Once you have converted the text to HTML, copy and paste it into the HTML question’s “HTML markup” box.</p>
 <p>As with the information sheet, check to make sure your text has converted properly. If your text does not look the way you want, review the text in the Word tab of the converter and make sure everything looks the way you want it. If you are still having issues, ask for help.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -706,7 +760,7 @@ Activity
 <div class="callout-body-container callout-body">
 <p>Following the instructions above, recreate the debrief sheet from the brief using an HTML question.</p>
 <p>You should now have your full survey. Before starting testing, make sure your questions are named properly (see <a href="#sec-names" class="quarto-xref">Section&nbsp;2.3</a>) and that your responses are recorded properly (see <a href="#sec-responses" class="quarto-xref">Section&nbsp;2.4</a>).</p>
-<p>Once you’re done, preview your survey to check everything works.</p>
+<p>Once you’re done, <code style="color: #D2691E;">Pilot</code> your survey to check everything works.</p>
 </div>
 </div>
 <!--
@@ -738,31 +792,13 @@ Note that the name and email address of the researcher will be different to your
 -->
 </section>
 </section>
-<section id="sec-run" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="sec-run"><span class="header-section-number">4</span> Running the survey</h2>
-<section id="sec-status" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="sec-status"><span class="header-section-number">4.1</span> Survey status</h3>
-<p>To access your survey’s status, click the <code style="color: #4d4d4d;">Overview</code> tab at the top of the page, to the left of the <code style="color: #4d4d4d;">Design</code> tab (when opening a survey you will be automatically directed to the <code style="color: #4d4d4d;">Design</code> tab - see picture below, box 1).</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="5.1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Survey status"><img src="5.1.png" class="img-fluid figure-img" alt="Survey status picture: A screenshot of the survey designer window, highlighting which button to click to access the survey status options." width="950"></a></p>
-<figcaption>Survey status</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>A Pavlovia survey has 3 statuses, which you can see in the Status area of the Overview page (picture above, box 2):</p>
-<ul>
-<li>Inactive - this is the status the survey is on upon creation and by default. Set the survey to this status when you are designing it.</li>
-<li>Piloting - this is the status you should use to test how your survey is working. You will not be able to share the survey with participants and <strong>data will not be collected</strong>, but will be able to check that your survey is working as intended.</li>
-<li>Running - this is the status used to activate the survey and enable data collection. Setting the survey to running will provide you with a link to share with participants (see picture above, box 3).</li>
-</ul>
+<section id="sec-run" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="sec-run"><span class="header-section-number">5</span> Running the survey</h2>
+<p>Now your survey is ready, it’s time to try it out on yourself to collect some test data.</p>
 <p style="color: red;">
 You should not collect data from anyone but yourself as you do not have ethical approval to collect data from anyone.
 </p>
-<p>You can move between the different statuses freely, however be aware that moving from the Running status to either of the other two will prevent participants from continuing to run your survey.</p>
+<p>Refer to <a href="#sec-status" class="quarto-xref">Section&nbsp;3</a> to change your survey’s status.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -773,17 +809,15 @@ Activity
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Set your survey to Running and test your survey using the survey link provided by Pavlovia</p>
+<p>Set your survey to <code style="color: green;">RUNNING</code> and test your survey on yourself by clicking the <code style="color: green;">Run</code> button.</p>
 </div>
 </div>
 <!-- ::: {.callout-tip collapse="true"} -->
 <!-- #### Solution -->
 <!-- ![](5.2.png){fig-alt="Screenshot of the Overview tab of a Pavlovia survey. The survey's status is set to Running."} -->
 <!-- ::: -->
-</section>
-</section>
-<section id="sec-data" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="sec-data"><span class="header-section-number">5</span> Survey data</h2>
+<section id="sec-data" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="sec-data"><span class="header-section-number">5.1</span> Survey data</h3>
 <p>You can see your collected data by accessing the <code style="color: #4d4d4d;">Responses</code> tab, which you can find to the right of the <code style="color: #4d4d4d;">Design</code> tab (see picture below, box 1).</p>
 <p>In the <code style="color: #4d4d4d;">Responses</code> tab, you can download your data by clicking the <code style="color: green;">Download responses</code> button (box 2 pictured below). Your data will be downloaded as a .csv file, which you can open in Microsoft Excel and your chosen analysis software (SPSS, jamovi, JASP, R, etc.).</p>
 <p>You can also see some information about the survey’s responses below (box 3 pictured below).</p>
@@ -807,13 +841,14 @@ Activity
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Run your survey multiple times to collect data, then access the survey’s data to see your results.</p>
+<p>Run your survey multiple times on yourself to collect data, then access the survey’s data to see your results.</p>
 </div>
 </div>
 <!-- ::: {.callout-tip collapse="true"} -->
 <!-- ### Solution -->
 <!-- ![](6.2.png){fig-alt="Screenshot of the Responses tab of a Pavlovia survey. It is populated with data collected while testing the survey."} -->
 <!-- ::: -->
+</section>
 </section>
 
 </main>
