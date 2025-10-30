@@ -494,6 +494,8 @@ You can now paste this in the HTML markup box of the question's settings.
 ##### Activity
 
 Follow the instructions above to recreate the brief's consent statements using an HTML question and the HTML converter.
+
+Name it <code>consent1</code>.
 :::
 <!--
 Click the "Solution" button below to see the HTML version of the consent statements.
@@ -529,6 +531,8 @@ Finally, make sure you make this question required so participants cannot skip i
 ##### Activity
 
 Follow the instructions above to recreate the brief's consent questions using a Radio Button Group question.
+
+Name it <code>consent2</code>.
 :::
 
 <!-- ::: {.callout-tip collapse="true"} -->
